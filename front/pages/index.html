@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda-loja</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <h1>Gerenciamento de Vendedores e Vendas</h1>
+
+	<h2>Lista de Vendedores</h2>
+	<ul id="vendedores"></ul>
+
+	<h2>Alterar dados do vendedor</h2>
+	    <label for="nome-vendedor">Nome:</label>
+	        <input type="text" id="nome-vendedor">
+	    <label for="email-vendedor">Email:</label>
+	        <input type="email" id="email-vendedor">
+	<button onclick="alterarVendedor()">Alterar</button>
+
+	<h2>Lista de Vendas</h2>
+	    <ul id="vendas"></ul>
+
+	<h2>Alterar venda existente</h2>
+	    <label for="data-venda">Data:</label>
+	        <input type="date" id="data-venda">
+	    <label for="quantidade-venda">Quantidade:</label>
+	        <input type="number" id="quantidade-venda">
+	    <label for="nome-vendedor-venda">Nome do Vendedor:</label>
+	        <input type="text" id="nome-vendedor-venda">
+	    <label for="nome-produto-venda">Nome do Produto:</label>
+	        <input type="text" id="nome-produto-venda">
+	<button onclick="alterarVenda()">Alterar</button>
+
+	<h2>Lançar nova venda</h2>
+	    <label for="selecionar-vendedor">Selecione o Vendedor:</label>
+	        <select id="selecionar-vendedor"></select>
+	    <label for="selecionar-produto">Selecione o Produto:</label>
+	        <select id="selecionar-produto"></select>
+	<button onclick="lancarVenda()">Lançar</button>
+</body>
+<script src="../js/script.js">
+</script>
+</html>
